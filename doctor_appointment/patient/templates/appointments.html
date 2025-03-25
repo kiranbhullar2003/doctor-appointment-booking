@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'patient\appointments.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> medicare </a>
+
+        <nav class="navbar">
+            <a href="#Home">Home</a>
+            <a href="#Services">Services</a>
+            <a href="#About">About</a>
+            <a href="#Doctors">Doctors</a>
+            <a href="#Booking">Booking</a>
+            <a href="#Reviews">Reviews</a>
+            <a href="#Blogs">Blogs</a>
+            <a href="register">Register</a>
+            <a href="dashboard">dashboard</a>
+            <a href="dashboardpatient">dashboardpatient</a>
+            <a href="form">form</a>
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+    </header>
+    {% for appointment in appointments %}
+    
+    <section class="home" id="Home">
+
+
+        <div class="content">
+            <h3>Appointment detial</h3>
+            <p>Doctor's Name: {{ appointment.doctor_name }}</p>
+            <p>Date of Appointment: {{ appointment.date }} </p>
+            <p>Reason of visit:{{ appointment.reason }}</p>
+            <p>Patient's name:{{ appointment.patient_name }}</p>
+            <p>Patient's Age:{{ appointment.patient_age }}</p>
+            <p>Patient's Gender:{{ appointment.patient_gender }}</p>
+            <p>Patient's email:{{ appointment.patient_email }}</p>
+            <p>Patient's phone number:{{ appointment.patient_phone }}</p>
+            <a href="#" class="btn"> Cancel Appointment <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+    </section>
+    {% endfor %}
+
+    <script src="{% static 'patient\appointments.js' %}"></script>
+</body>
+</html>

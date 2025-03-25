@@ -78,7 +78,7 @@ body{
     border-top-right-radius: 50%;
     box-shadow: 15px 0 0 #3aced3;
 }
-form-header::after{
+.form-header::after{
     right: -30px;
     border-top-left-radius: 50%;
     box-shadow: -15px 0 0 #3aced3;

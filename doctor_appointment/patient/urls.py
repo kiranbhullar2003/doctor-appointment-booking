@@ -5,4 +5,10 @@ urlpatterns = [
     path('', views.landingPage),
     path('register', views.registerPage),
     path("dashboard", views.dashboard),
+    path("dashboardpatient", views.dashboardpatient),
+    path("appointments", views.appointments),
+    path("Appointmentday", views.Appointmentday),
+    path("api/register", views.register),
+    path("api/login", views.login_view),
+    path("form", views.form),
 ]
