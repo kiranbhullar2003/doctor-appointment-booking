@@ -7,7 +7,7 @@ urlpatterns = [
     path("dashboard", views.dashboard),
     path("dashboardpatient", views.dashboardpatient),
     path("appointments", views.appointments),
-    path("Appointmentday", views.Appointmentday),
+    path("appointmentdetail", views.Appointmentdetail),
     path("api/register", views.register),
     path("api/login", views.login_view),
     path("form", views.form),

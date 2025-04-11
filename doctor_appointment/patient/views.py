@@ -71,10 +71,8 @@ def appointments(request):
 
     return render(request, "appointments.html", context)
 
-def Appointmentday(request):
-    
-
-    return render(request, "Appointmentday.html")
+def Appointmentdetail(request):
+    return render(request, "appointment_detail.html")
 
 
 @csrf_exempt

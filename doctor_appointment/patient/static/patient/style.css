@@ -436,7 +436,7 @@ section:nth-child(even) {
 
 .blogs .box-container .box .image{
     height: 20rem;
-    overflow:hidden;
+    overflow: hidden;
     border-radius: .5rem;
 }
 
